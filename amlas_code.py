@@ -20,7 +20,7 @@ random.seed(11)
 
 #read in the ratings
 ratings = pd.read_csv("ratings.csv") #sorted by users
-movies =  pd.read_csv("moviess.csv") #movies and their ids
+movies =  pd.read_csv("movies.csv") #movies and their ids
 ratings_mov = ratings[['movieId', 'userId', 'rating']].sort_values('movieId').reset_index(drop=True)  #sorted by movies
 
 #function used to obtain start indexes map
